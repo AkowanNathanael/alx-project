@@ -1,0 +1,246 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Header Section */
+  header {
+    position: relative;
+    text-align: center;
+  }
+  
+  header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Introduction Section */
+  section#home {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section#home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section#home p {
+    margin-bottom: 10px;
+  }
+  
+  /* Features Section */
+  section#features {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section#features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature {
+    margin-bottom: 40px;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    margin-bottom: 10px;
+  }
+  
+  /* About Section */
+  section#about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section#about p {
+    margin-bottom: 10px;
+  }
+  
+  section#about ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  section#about ul li {
+    margin: 0 10px;
+  }
+  
+  section#about ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Video Section */
+  section#video {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section#video h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section#video video {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  section#video p {
+    margin-bottom: 10px;
+  }
+  
+  /* Deployed Project Button */
+  .cta-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .cta-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section#home h2 {
+      font-size: 1.8rem;
+    }
+  
+    section#home p,
+    section#features p,
+    section#about p,
+    section#video p {
+      font-size: 1rem;
+    }
+  
+    section#features h2,
+    section#about h2,
+    section#video h2 {
+      font-size: 1.8rem;
+    }
+  
+    .feature img {
+      max-width: 250px;
+    }
+  }
+/* Add your existing CSS styles here */
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  }
+    
